@@ -1483,8 +1483,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     padding: 0 30px; }
   .production__title {
     position: relative;
