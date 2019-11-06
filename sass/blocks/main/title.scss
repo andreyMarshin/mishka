@@ -1,0 +1,74 @@
+// .title {
+//   &--catalog {
+//     height: 176px;
+//     background-image: none;
+//     background-size: 0;
+//   }
+
+//   &__wrapper {
+//     padding: 74px 0;
+//     position: relative;
+//   }
+
+//   &__header {
+//     margin: 0;
+//     padding: 0 30px;
+//     font-size: 27px;
+//     font-weight: bold;
+//     line-height: 30px;
+//     text-align: center;
+//     color: $black;
+//   }
+
+//   @media (min-width: $tablet-width){
+//     min-height: 630px;
+//     background-image: url("../img/hero-tablet@1x.jpg");
+//     background-position: center -1px;
+//     background-size: 1150px auto;
+
+//     /* @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//       background-image: url("../img/hero-tablet@2x.jpg");
+//     } */
+
+//     &--catalog {
+//       min-height: 208px;
+//       background-image: none;
+//       background-size: 0;
+//     }
+
+//     &__wrapper {
+//       padding: 160px 0;
+
+//       &--catalog {
+//         padding: 100px 0 80px 0;
+//       }
+//     }
+
+//     &__header {
+//       font-size: 43px;
+//       line-height: 50px;
+//     }
+
+//   }
+
+//   @media (min-width: $desktop-width){
+//     min-width: 1250px;
+
+//     &--catalog {
+//       min-height: 260px;
+//     }
+
+//     &__wrapper {
+//       padding: 160px;
+
+//       &--catalog {
+//         padding: 100px 0;
+//       }
+//     }
+
+//     &__header {
+//       font-size: 53px;
+//       line-height: 57px;
+//     }
+//   }
+// }

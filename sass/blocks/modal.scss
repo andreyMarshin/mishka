@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 150;
+  border-top: 1px solid hsl(0, 0%, 78%);
+  border-bottom: 1px solid hsl(0, 0%, 78%);
+  background-color: $white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.40);
+  transform: translate(-50%, -50%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+
+  &--hide {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 33px 30px 46px 30px;
+  }
+
+  &__title {
+    padding: 0 50px;
+    margin: 0 0 26px 0;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__descr {
+    margin: 0 0 26px 0;
+    color: $text-descr;
+    text-align: center;
+  }
+
+  &__modal-group {
+    width: $mobile-content-width;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+  }
+
+  &__select-size {
+    display: none;
+  }
+
+  &__label-size {
+    width: 78px;
+    padding: 16px 0;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: bold;
+    color: $text-descr;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid $dark-grey;
+    cursor: pointer;
+
+    &:hover {
+      border-color: hsl(0, 0%, 78%);
+    }
+  }
+
+  &__select-size:checked + &__label-size {
+    border-color: $mint;
+  }
+
+  &__btn {
+    width: 100%;
+    border: none;
+    background-color: $mint;
+    color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+
+    &__wrapper {
+      padding: 50px 108px 46px 108px;
+    }
+
+
+    &__title {
+      margin: 0 0 24px 0;
+      padding: 0;
+      font-size: 29px;
+      line-height: 57px;
+    }
+
+    &__descr {
+      font-size: 17px;
+    }
+
+    &__modal-group {
+      width: 100%;
+    }
+
+    &__select-size {
+      display: none;
+    }
+
+    &__label-size {
+      width: 108px;
+      padding: 16px 0;
+      font-size: 17px;
+      line-height: 16px;
+      font-weight: bold;
+      color: $text-descr;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid $dark-grey;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-overlay {
+  width: $mobile-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 130;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--hide {
+    display: none;
+  }
+}

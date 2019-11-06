@@ -1,0 +1,20 @@
+// colors
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$text-descr: hsl(0, 0%, 27%);
+$grey: hsl(0, 0%, 98%);
+$dark-grey: hsl(0, 0%, 95%);
+$light-mint: hsl(168, 54%, 60%);
+$mint: hsl(171, 48%, 55%);
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
+$mobile-content-width: 260px;
+$tablet-content-width: 668px;
+$desktop-content-width: 1050px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

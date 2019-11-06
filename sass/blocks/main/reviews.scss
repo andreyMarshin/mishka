@@ -1,0 +1,177 @@
+.reviews {
+  padding: 58px 0 43px 0;
+  margin: 0 auto;
+  width: $mobile-width;
+
+  &__wrapper {
+    padding: 0 30px;
+  }
+
+  &__title {
+    margin: 0 0 34px 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__author-text {
+    margin: 0 0 36px 0;
+    font-size: 15px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__author-data {
+    width: 100%;
+  }
+
+  &__author-name {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  &__author-email {
+    margin: 0 0 40px 0;
+    font-size: 17px;
+    color: #444444;
+  }
+
+  &__toggles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 36px 0;
+  }
+
+  &__toggle {
+    min-width: 50%;
+    padding: 10px 0;
+    border: 1px solid $dark-grey;
+    outline: none;
+    background-color: $white;
+    cursor: pointer;
+
+    :hover {
+      opacity: 0.7;
+    }
+
+    &:active, &:focus {
+      opacity: 0.4;
+    }
+  }
+
+
+  &__write {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0 66px 0;
+    width: $tablet-width;
+    background: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: 0 top;
+
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+
+    &__title {
+      margin: 0 0 46px 0;
+      width: 70%;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__write {
+      width: 25%;
+      margin: 0 0 46px 0;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      order: 1;
+    }
+
+    &__author-text {
+      width: 100%;
+      margin: 0 0 60px 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__author-data {
+      margin:  0 0 40px 0;
+      width: 75%;
+    }
+
+    &__author-name {
+      margin: 0;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    &__author-email {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    &__toggles {
+      padding: 0 16px;
+      margin:  0 0 40px 0;
+      width: 20%;
+    }
+
+    &__toggle {
+      min-width: 10%;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 66px 0;
+    width: $desktop-width;
+    background-position: 100px top;
+
+    &__wrapper {
+      padding: 0 100px 0 270px;
+    }
+
+    &__title {
+      margin: 0 0 44px 0;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__write {
+      margin: 0 0 44px 0;
+      width: 19%;
+    }
+
+    &__author-text {
+      margin: 0 0 40px 0;
+      width: 100%;
+      line-height: 30px;
+    }
+
+    &__author-data {
+      margin:  0 0 96px 0;
+      width: 80%;
+    }
+
+    &__toggles {
+      margin:  0 0 96px 0;
+      width: 16%;
+    }
+
+  }
+}

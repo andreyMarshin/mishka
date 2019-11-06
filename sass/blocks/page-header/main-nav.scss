@@ -1,0 +1,154 @@
+.main-nav {
+  margin: 0 auto;
+  position: relative;
+  width: $mobile-width;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    padding: 22px 0 16px 0;
+    text-align: center;
+
+    img {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:focus, &:active {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    padding: 0;
+    top: 2px;
+    right: 30px;
+    width: 20px;
+    height: 79px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &--closed &__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  &--opened &__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: -2px;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  @media (max-width: 767px) {
+    &--closed &__list {
+      display: none;
+    }
+  }
+
+  &--no-js &__toggle {
+    display: none;
+  }
+
+  &--no-js &__list {
+    display: block;
+  }
+
+  &__info {
+    display: none;
+  }
+
+
+  @media (min-width: $tablet-width){
+    padding: 0 50px;
+    width: $tablet-content-width;
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      padding: 22px 0 0 0;
+    }
+
+    &__logo-image {
+      display: block;
+      width: 113px;
+      height: 46px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__info {
+      position: absolute;
+      display: block;
+      top: 98px;
+      right: 0;
+      z-index: 1;
+      color: $text-descr;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+    padding: 0 100px;
+
+    &__logo {
+      padding: 12px 0 0 0;
+      order: 1;
+    }
+
+    &__logo-image {
+      width: 148px;
+    }
+  }
+}

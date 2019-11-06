@@ -1,0 +1,98 @@
+.goods {
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    background-color: $light-mint;
+
+    &:last-child {
+      background-color: $mint;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 30px 18px 30px;
+  }
+
+  &__text {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__icon {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    &__wrapper {
+      padding: 0 50px;
+
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+    &__link {
+      padding: 36px;
+
+      &:hover svg{
+        opacity: 0.4;
+      }
+
+      &:active, &:focus {
+        opacity: 0.4;
+      }
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 24px;
+
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    &__wrapper {
+      padding: 0 100px;
+    }
+
+    &::after {
+      bottom: -14px;
+      height: 34px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.page-footer {
+  background-color: $dark-grey;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $mobile-content-width;
+    margin: 0 auto;
+    padding: 20px 30px 24px 30px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    padding: 0 0 14px 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__social-item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__social-icon {
+    &:hover{
+      fill: $mint;
+    }
+
+    &:active, &:focus {
+      opacity: 0.4;
+    }
+  }
+
+  &__logo-link {
+    display: none;
+  }
+
+  &__copyright-link {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright-text {
+    margin: 0;
+    padding: 6px 0;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  &__copyright-icon {
+    margin: 0;
+    fill: $mint;
+    opacity: 1;
+  }
+
+  &__copyright {
+    width: 70%;
+    padding: 0;
+    margin: 20px 0 0 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active, &:focus {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: $tablet-content-width;
+      padding: 46px 50px 56px 50px;
+    }
+
+    &__logo-link {
+      display: block;
+      width: 26%;
+      margin: 0;
+    }
+
+    &__logo{
+      width: 102px;
+      height: 34px;
+
+      &:hover {
+        fill: $mint;
+      }
+
+      &:active, &:focus {
+        opacity: 0.4;
+      }
+    }
+
+    &__social {
+      padding: 6px 0 0 0;
+      width: 30%;
+      border-bottom: none;
+    }
+
+    &__social-list {
+      padding: 0;
+    }
+
+    &__copyright {
+      width: 26%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__wrapper {
+      justify-content: space-between;
+      width: $desktop-content-width;
+      padding: 50px 100px;
+    }
+
+    &__social-list {
+      width: 70%;
+    }
+
+    &__copyright {
+      width: 18%;
+    }
+  }
+}

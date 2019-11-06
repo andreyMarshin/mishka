@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  min-width: 170px;
+  padding: 14px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  background-color: $white;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-descr;
+    color: $white;
+  }
+
+  &:active, &:focus {
+    background-color: $text-descr;
+    color:rgba(255, 255, 255, 0.3)
+  }
+}

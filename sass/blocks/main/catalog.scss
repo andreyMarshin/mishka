@@ -1,0 +1,160 @@
+.catalog {
+  margin: 0 auto;
+  width: $mobile-width;
+
+  &__items {
+    padding: 30px;
+  }
+
+  &__item {
+    margin: 0 0 30px 0;
+    border: 1px solid #ededed;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__item-text {
+    padding: 30px;
+  }
+
+  &__item-title {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &__item-descr {
+    margin: 0 0 26px 0;
+    padding: 0 0 24px 0;
+    font-size: 13px;
+    line-height: 30px;
+    color: #444444;
+    border-bottom: 1px solid $dark-grey;
+  }
+
+  &__item-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &__price-icon {
+    fill: #cccccc;
+  }
+
+  &__item-title, &__price-icon {
+    &:hover {
+      fill: $mint;
+      opacity: 0.6;
+    }
+
+    &:active, &:focus {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    &__items {
+      padding: 80px 50px 50px 50px;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+
+    &__image-link {
+      width: 50%;
+      background-color: #f1f1f1;
+    }
+
+    &__img {
+      width: 334px;
+      height: 334px;
+    }
+
+    &__item-text {
+      display: flex;
+      flex-direction: column;
+      width: 41%;
+    }
+
+    &__item-title {
+      font-size: 20px;
+    }
+
+    &__item-descr {
+      padding: 0 0 180px 0;
+      font-size: 15px;
+    }
+
+    &__item-price {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    &__items {
+      padding: 130px 100px 110px 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 314px;
+      margin: 0;
+      // margin-right: 51px;
+
+      // &:last-child {
+      //   margin-right: 0;
+      // }
+    }
+
+    &__image-link {
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
+    &__img {
+      width: 314px;
+      height: 460px;
+    }
+
+    &__item-text {
+      width: 100%;
+    }
+
+    &__item-descr {
+      padding: 0 0 42px 0;
+      font-size: 15px;
+
+      &--last {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}

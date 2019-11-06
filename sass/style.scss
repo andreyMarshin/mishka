@@ -1,0 +1,33 @@
+@import "normalize.scss";
+@import "variables.scss";
+
+// global
+@import "global/base.scss";
+@import "global/fonts.scss";
+@import "global/button.scss";
+
+// page-header
+@import "blocks/page-header/page-header.scss";
+@import "blocks/page-header/main-nav.scss";
+@import "blocks/page-header/site-list.scss";
+@import "blocks/page-header/user-list.scss";
+
+// main
+@import "blocks/main/intro.scss";
+@import "blocks/main/title.scss";
+@import "blocks/main/goods.scss";
+@import "blocks/main/feature.scss";
+@import "blocks/main/about-us.scss";
+@import "blocks/main/reviews.scss";
+@import "blocks/main/contacts.scss";
+@import "blocks/main/catalog.scss";
+@import "blocks/main/production";
+@import "blocks/main/form.scss";
+
+// footer
+@import "blocks/page-footer/page-footer.scss";
+
+// modal
+@import "blocks/modal.scss";
+
+
