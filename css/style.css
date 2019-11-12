@@ -381,11 +381,11 @@ img {
       opacity: 0.2; }
   .main-nav__toggle {
     position: absolute;
-    padding: 0;
     top: 2px;
-    right: 30px;
+    right: 20px;
     width: 20px;
     height: 79px;
+    padding: 0 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -394,7 +394,7 @@ img {
     content: "";
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 10px;
     width: 20px;
     height: 2px;
     background-color: black;
@@ -408,7 +408,7 @@ img {
     content: "";
     position: absolute;
     top: 36px;
-    left: -2px;
+    left: 10px;
     width: 24px;
     height: 2px;
     background-color: #000000;
@@ -615,9 +615,6 @@ img {
     background-repeat: no-repeat;
     background-position: center -17px;
     background-size: 575px auto; }
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .intro__title-wrapper {
-        background-image: url("../img/hero-mobile@2x.jpg"); } }
     .intro__title-wrapper--inner-page {
       height: 176px;
       background-image: none;
@@ -1229,12 +1226,12 @@ img {
       color: #55c3b3; }
     .contacts__email-link:active, .contacts__email-link:focus {
       opacity: 0.4; }
-  .contacts__map iframe {
-    width: 320px;
-    height: 457px; }
   .contacts__contacts-btn {
     width: 260px;
     margin: 40px 0 0 0; }
+  .contacts__map iframe {
+    width: 320px;
+    height: 457px; }
   @media (min-width: 768px) {
     .contacts {
       padding: 84px 0 60px 0;
@@ -1278,14 +1275,15 @@ img {
         line-height: 30px; }
       .contacts__email {
         margin-bottom: auto; }
-      .contacts__map iframe {
-        width: 768px; }
       .contacts__img {
         width: 768px;
         height: 457px; }
       .contacts__contacts-btn {
         margin: 56px 0 0 0;
-        width: 230px; } }
+        width: 230px; }
+      .contacts__map iframe {
+        width: 768px;
+        height: 457px; } }
   @media (min-width: 1250px) {
     .contacts {
       -webkit-box-orient: horizontal;
@@ -1534,9 +1532,9 @@ img {
     line-height: 24px;
     color: #444444; }
   .production__buy {
-    display: block;
-    width: 100%;
-    padding: 14px 10px; }
+    width: 192px;
+    height: 52px;
+    padding: 0 10px; }
   @media (min-width: 768px) {
     .production {
       width: 768px; }

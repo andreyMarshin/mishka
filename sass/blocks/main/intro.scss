@@ -19,10 +19,6 @@
     background-position: center -17px;
     background-size: 575px auto;
 
-    @media #{$retina} {
-      background-image: url("../img/hero-mobile@2x.jpg");
-    }
-
     &--inner-page {
       height: 176px;
       background-image: none;

@@ -54,14 +54,15 @@
     }
   }
 
-  &__map iframe{
-    width: 320px;
-    height: 457px;
-  }
 
   &__contacts-btn {
     width: 260px;
     margin: 40px 0 0 0;
+  }
+
+  &__map iframe {
+    width: 320px;
+    height: 457px;
   }
 
   @media (min-width: $tablet-width) {
@@ -114,10 +115,6 @@
       margin-bottom: auto;
     }
 
-    &__map iframe{
-      width: $tablet-width;
-    }
-
     &__img {
       width: 768px;
       height: 457px;
@@ -126,6 +123,11 @@
     &__contacts-btn {
       margin: 56px 0 0 0;
       width: 230px;
+    }
+
+    &__map iframe {
+      width: 768px;
+      height: 457px;
     }
   }
 

@@ -26,11 +26,11 @@
 
   &__toggle {
     position: absolute;
-    padding: 0;
     top: 2px;
-    right: 30px;
+    right: 20px;
     width: 20px;
     height: 79px;
+    padding: 0 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -42,7 +42,7 @@
 
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 10px;
     width: 20px;
     height: 2px;
     background-color: $black;
@@ -57,7 +57,7 @@
       content: "";
       position: absolute;
       top: 36px;
-      left: -2px;
+      left: 10px;
       width: 24px;
       height: 2px;
       background-color: #000000;
